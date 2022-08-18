@@ -18,13 +18,16 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
-           var firstCar = new Car();
+
+
+            //This is dot notation
+            var firstCar = new Car();
             firstCar.Make = "Ford";
             firstCar.Model = "Fusion";
             firstCar.Year = 2014;
             firstCar.IsDriveable = true;
             firstCar.EngineNoise = "Vroom";
-
+       
             var carLot = new List<Car>(); 
             carLot.Add(firstCar);
             Console.WriteLine($"Info on {firstCar.Make}");
@@ -32,13 +35,15 @@ namespace CarLotSimulator
             Console.WriteLine($"Horn Noise:  {firstCar.MakeHonkNoise()}");
             Console.WriteLine();
 
+            
             var secondCar = new Car() {Make = "Chevy", Model= "Bel-Air", Year = 1956, IsDriveable = false, EngineNoise = "broken" };
             carLot.Add(secondCar);
             Console.WriteLine($"Info on {secondCar.Make}");
             Console.WriteLine($"Engine Noise: {secondCar.MakeEngineNoise()}");
             Console.WriteLine($"Horn Noise: {secondCar.MakeHonkNoise()}");
-            Console.WriteLine();   
+            Console.WriteLine();
 
+            //this is object initializer syntax
             Car thirdCar = new Car()
             {
                 Make = "Cadillac",
