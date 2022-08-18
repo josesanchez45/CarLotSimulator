@@ -30,7 +30,7 @@ namespace CarLotSimulator
        
             var carLot = new List<Car>(); 
             carLot.Add(firstCar);
-            Console.WriteLine($"Info on {firstCar.Make}");
+            Console.WriteLine($"Info on: {firstCar.Make}");
             Console.WriteLine($"Engine Noise:  {firstCar.MakeEngineNoise()}");
             Console.WriteLine($"Horn Noise:  {firstCar.MakeHonkNoise()}");
             Console.WriteLine();
@@ -38,7 +38,7 @@ namespace CarLotSimulator
             
             var secondCar = new Car() {Make = "Chevy", Model= "Bel-Air", Year = 1956, IsDriveable = false, EngineNoise = "broken" };
             carLot.Add(secondCar);
-            Console.WriteLine($"Info on {secondCar.Make}");
+            Console.WriteLine($"Info on: {secondCar.Make}");
             Console.WriteLine($"Engine Noise: {secondCar.MakeEngineNoise()}");
             Console.WriteLine($"Horn Noise: {secondCar.MakeHonkNoise()}");
             Console.WriteLine();
@@ -53,7 +53,7 @@ namespace CarLotSimulator
                 EngineNoise = "Vroom"
             };
             carLot.Add(thirdCar);
-            Console.WriteLine($"Info on {thirdCar.Make}");
+            Console.WriteLine($"Info on: {thirdCar.Make}");
             Console.WriteLine($"Engine Noise: {thirdCar.MakeEngineNoise()}");
             Console.WriteLine($"Horn Noise: {thirdCar.MakeHonkNoise()}");
             Console.WriteLine();
