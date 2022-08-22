@@ -7,7 +7,13 @@ namespace CarLotSimulator
     public class CarLot
     {
         public List<Car> AListOfCars { get; set; } = new List<Car>();
+
+        public static int numberOfCars = 0;
     }
+
+    
+   
+    
 }
   //Create a CarLot class
             //It should have at least one property: a List of cars

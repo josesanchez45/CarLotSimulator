@@ -62,12 +62,24 @@ namespace CarLotSimulator
             foreach (var car in carLot)
             {
                 Console.WriteLine();
+                Console.WriteLine("Car is currently available");
+                Console.WriteLine();
                 Console.WriteLine($"Make: {car.Make}");
                 Console.WriteLine();
                 Console.WriteLine($"Year: {car.Year}");
                 Console.WriteLine();
                 Console.WriteLine($"Model: { car.Model}");
             }
+            Console.WriteLine();
+
+            foreach (var car in carLot)
+            {
+
+               CarLot.numberOfCars ++;
+
+            }
+
+            Console.WriteLine($"Cars in the lot = {CarLot.numberOfCars}");
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
             //*************BONUS X 2*************//
